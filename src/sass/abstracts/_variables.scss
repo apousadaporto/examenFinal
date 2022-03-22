@@ -1,3 +1,24 @@
 /* ********* */
 /* @VARIABLES */
 /* ********* */
+
+// Colores
+$colores: (
+    blanco: #ECEDEE,
+    azul: #2a8deb,
+    grisOscuro: #555454,
+    grisClaro: #d5dbe2,
+    negro: rgb(26, 26, 26)
+);
+
+// Tamaños de fuente
+$font: (
+    family: (
+        arial: Arial,
+    ),
+    sizes: (
+        h1: 50px,
+        texto: 18px,
+        boton: 22px
+    )
+);

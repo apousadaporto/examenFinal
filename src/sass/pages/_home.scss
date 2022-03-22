@@ -1,3 +1,54 @@
 /* ********* */
 /* @HOME */
 /* ********* */
+
+.contendor{
+    @include flex(flex, center, center);
+    background-color: map-get($colores, grisClaro);
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 1%;
+}
+
+.contenido{
+
+    &__primerParrafo{
+        color: map-get($colores, grisOscuro);
+    }
+
+    &__segundoParrafo{
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        color: map-get($colores, azul);
+    }
+    &__tercerParrafo{
+        padding-bottom: 3.125rem;
+        color: map-get($colores, grisOscuro);
+    }
+    
+}
+
+.contenido__mobileDevices{
+    
+    @include flex(column, center, flex-start);
+    width: 60%;
+    height: 100vh;
+
+}
+
+.titulo{
+    padding-bottom: 1.875rem;
+}
+
+.boton{
+    padding: 1.25rem 2.5rem;
+    border: 1px solid map-get($colores, azul);
+    border-radius: 5px;
+    background-color: map-get($colores, azul);
+    color: map-get($colores, blanco);
+}
+
+.imagen{
+    @include flex(flex, center, center);
+}
