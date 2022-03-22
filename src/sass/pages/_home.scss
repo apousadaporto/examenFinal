@@ -2,7 +2,7 @@
 /* @HOME */
 /* ********* */
 
-.contendor{
+.primer__contendor{
     @include flex(flex, center, center);
     background-color: map-get($colores, grisClaro);
     width: 100%;
@@ -11,14 +11,20 @@
     padding-top: 1%;
 }
 
+.segundo__contendor{
+    @include flex(flex, center, center);
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
 .contenido{
 
     &__primerParrafo{
         color: map-get($colores, grisOscuro);
+        padding-bottom: 1.25rem;
     }
 
     &__segundoParrafo{
-        padding-top: 1.25rem;
         padding-bottom: 1.25rem;
         color: map-get($colores, azul);
     }
@@ -34,10 +40,19 @@
     @include flex(column, center, flex-start);
     width: 60%;
     height: 100vh;
+    padding-right: 6.25rem;
+
+}
+.contenido__responsiveDesign{
+    
+    @include flex(column, center, flex-start);
+    width: 60%;
+    height: 100vh;
+    padding-left: 6.25rem;
 
 }
 
-.titulo{
+.titulo, .categoria{
     padding-bottom: 1.875rem;
 }
 
